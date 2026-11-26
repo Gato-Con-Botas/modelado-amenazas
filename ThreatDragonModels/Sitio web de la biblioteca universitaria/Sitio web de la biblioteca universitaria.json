@@ -776,7 +776,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "72a859dc-fb24-49da-8c6a-67bf92d607f3"
+              ]
             },
             "labels": [
               "Web Response"
@@ -792,6 +794,11 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -838,7 +845,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "72a859dc-fb24-49da-8c6a-67bf92d607f3"
+              ]
             },
             "labels": [
               "Web Request"
@@ -885,7 +894,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "72a859dc-fb24-49da-8c6a-67bf92d607f3"
+              ]
             },
             "labels": [
               "Web Request"
@@ -899,7 +910,6 @@
               "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
               "port": "67c1aca5-de43-482a-a8bd-e36bc6ae729a"
             },
-            "vertices": [],
             "tools": {
               "items": [
                 "boundary",
@@ -914,7 +924,8 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -947,7 +958,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "72a859dc-fb24-49da-8c6a-67bf92d607f3"
+              ]
             },
             "labels": [
               "Web Response"
@@ -975,21 +988,39 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "crossingFlows": [
+                "0fd04628-f0de-47a3-a836-8c6b48896332",
+                "c465c9e6-9db2-4e41-8270-e8cc600fe06a",
+                "8a96c403-6dc1-490d-bf84-b4e98bada533",
+                "60c767d0-73e3-4de3-8c4c-5c0e8a2158f1"
+              ],
+              "containedElements": [
+                "aaf9b387-c8db-4809-9dd3-eae6d74a95f6",
+                "8662be43-6f7b-432b-934f-810caa65a407"
+              ]
             },
             "labels": [
               "Usuario/Web\nserver limite"
             ],
             "id": "72a859dc-fb24-49da-8c6a-67bf92d607f3",
             "source": {
-              "x": -190,
-              "y": -70
+              "x": -180,
+              "y": -150
             },
             "target": {
-              "x": 530,
-              "y": -70
-            }
+              "x": 500,
+              "y": -160
+            },
+            "vertices": [
+              {
+                "x": -130,
+                "y": -50
+              },
+              {
+                "x": 450,
+                "y": -50
+              }
+            ]
           }
         ]
       },
