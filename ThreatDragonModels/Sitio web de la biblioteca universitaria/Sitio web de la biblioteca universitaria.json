@@ -258,8 +258,8 @@
           },
           {
             "position": {
-              "x": 248.75,
-              "y": -170
+              "x": 288.75,
+              "y": -150
             },
             "size": {
               "width": 112.5,
@@ -790,7 +790,6 @@
               "cell": "aaf9b387-c8db-4809-9dd3-eae6d74a95f6",
               "port": "ca3f5b20-3682-4db5-b8e0-d0f793cf1fd4"
             },
-            "vertices": [],
             "tools": {
               "items": [
                 "boundary",
@@ -800,7 +799,8 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -869,52 +869,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Web Response"
-            ],
-            "id": "60c767d0-73e3-4de3-8c4c-5c0e8a2158f1",
-            "source": {
-              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
-              "port": "67c1aca5-de43-482a-a8bd-e36bc6ae729a"
-            },
-            "target": {
-              "cell": "8662be43-6f7b-432b-934f-810caa65a407",
-              "port": "046dc18d-ab17-4d00-98d1-268651c54ca9"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Web Request",
               "description": "",
               "outOfScope": false,
@@ -940,7 +894,139 @@
               "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
               "port": "67c1aca5-de43-482a-a8bd-e36bc6ae729a"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 11,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Web Response"
+            ],
+            "id": "60c767d0-73e3-4de3-8c4c-5c0e8a2158f1",
+            "source": {
+              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
+              "port": "fa2ea471-1fb5-47ae-ac20-93d190fb59c8"
+            },
+            "target": {
+              "cell": "8662be43-6f7b-432b-934f-810caa65a407",
+              "port": "046dc18d-ab17-4d00-98d1-268651c54ca9"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       },
