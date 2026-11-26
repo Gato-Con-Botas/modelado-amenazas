@@ -808,6 +808,66 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
@@ -973,6 +1033,98 @@
                 "sourceMarker": {
                   "name": ""
                 },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Páginas",
+              "description": "",
+              "outOfScope": true,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Páginas"
+            ],
+            "id": "69658594-91bc-46db-a770-dca0120ec31b",
+            "source": {
+              "cell": "b995030d-e091-411b-b5f8-7e9ebd600155",
+              "port": "2f255a79-7b06-4c85-82bb-3e0387a2f68b"
+            },
+            "target": {
+              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
+              "port": "6d6cd1e9-1754-4d1c-b8a5-4619e1320439"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lee web\napp config",
+              "description": "",
+              "outOfScope": true,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Lee web\napp config"
+            ],
+            "id": "8e718447-53ee-401f-a0b4-78d9fc2abfeb",
+            "source": {
+              "cell": "73a85b5b-3620-48ca-bf7e-5afbfd440474",
+              "port": "2f255a79-7b06-4c85-82bb-3e0387a2f68b"
+            },
+            "target": {
+              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
+              "port": "6d6cd1e9-1754-4d1c-b8a5-4619e1320439"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
                 "strokeDasharray": null
               }
             },
@@ -1060,62 +1212,6 @@
                 "y": -50
               }
             ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 13,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Páginas",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Páginas"
-            ],
-            "id": "1b1e5dd3-d9e7-4eb7-8b42-fa375dc73189",
-            "source": {
-              "x": 140,
-              "y": 150
-            },
-            "target": {
-              "cell": "b995030d-e091-411b-b5f8-7e9ebd600155",
-              "port": "2f255a79-7b06-4c85-82bb-3e0387a2f68b"
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 14,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Lee web\napp config",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Lee web\napp config"
-            ],
-            "id": "e5be1fc6-2cb2-4c30-b746-07dc79155555",
-            "source": {
-              "x": 150,
-              "y": 150
-            },
-            "target": {
-              "cell": "73a85b5b-3620-48ca-bf7e-5afbfd440474",
-              "port": "2f255a79-7b06-4c85-82bb-3e0387a2f68b"
-            }
           },
           {
             "shape": "flow",
@@ -1207,14 +1303,47 @@
             ],
             "id": "d8215f29-6cf5-4430-b4f7-96d5999de513",
             "source": {
-              "x": 490,
-              "y": 10
-            },
-            "target": {
               "cell": "b9a8506b-2eb7-44cf-8063-8ba24a36b8fb",
               "port": "24545ee3-5219-4b3e-b6b8-533ec1fa50db"
             },
-            "vertices": []
+            "target": {
+              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
+              "port": "67c1aca5-de43-482a-a8bd-e36bc6ae729a"
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 17,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Límite\nWeb server/Db",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Límite\nWeb server/Db"
+            ],
+            "id": "7913e8a9-6aeb-443e-89cd-7e0676f9fe69",
+            "source": {
+              "x": 620,
+              "y": -60
+            },
+            "target": {
+              "x": 580,
+              "y": 260
+            }
           }
         ]
       },
