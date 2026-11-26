@@ -1,0 +1,37 @@
+{
+  "version": "2.6.2",
+  "release_version": "",
+  "released_at": "",
+  "summary": {
+    "title": "Sitio web de la biblioteca universitaria",
+    "owner": "EE Programación Segura",
+    "description": "El sitio web de la biblioteca universitaria es la primera implementacion de un sitio web para brindar servicios en linea a los bibliotecarios y usuarios de la biblioteca (estudiantes y personal universitario). Como esta es la primera implementacion del sitio web, la funcionalidad sera limitada. Seran tres usuarios de la aplicación:\n\n1. Estudiantes\n2. Personal\n3. Bibliotecarios\n\nEl personal y los estudiantes podran iniciar sesion y buscar libros, y los miembros del personal podran solicitar libros. Los bibliotecarios podran iniciar sesion, agregar libros, agregar usuarios y buscar libros.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Sitio web de la biblioteca universitaria",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      },
+      {
+        "id": 1,
+        "title": "Nuevo diagrama STRIInicio de sesión del usuario para el sitio web de la biblioteca universitariaDE",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "Guillermo Vera",
+    "threatTop": 0
+  }
+}
