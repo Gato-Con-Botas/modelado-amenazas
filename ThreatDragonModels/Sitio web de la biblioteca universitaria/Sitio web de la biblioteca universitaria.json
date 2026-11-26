@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 120,
-              "y": 45
+              "x": 100,
+              "y": 40
             },
             "size": {
               "width": 70,
@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Sitio web\nbiblioteca",
@@ -160,6 +160,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -243,7 +244,6 @@
               ]
             },
             "id": "aaf9b387-c8db-4809-9dd3-eae6d74a95f6",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -277,6 +277,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -360,7 +361,6 @@
               ]
             },
             "id": "8662be43-6f7b-432b-934f-810caa65a407",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
@@ -397,6 +397,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -480,7 +481,6 @@
               ]
             },
             "id": "b995030d-e091-411b-b5f8-7e9ebd600155",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Páginas web\nen disco",
@@ -521,6 +521,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -618,8 +619,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 5
+            }
           },
           {
             "position": {
@@ -645,6 +645,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -742,8 +743,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 6
+            }
           },
           {
             "shape": "flow",
@@ -783,14 +783,65 @@
             ],
             "id": "0fd04628-f0de-47a3-a836-8c6b48896332",
             "source": {
-              "x": -120,
-              "y": 20
+              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
+              "port": "6ffb747e-31cf-4f0d-a9dd-022bb3254c4d"
             },
             "target": {
               "cell": "aaf9b387-c8db-4809-9dd3-eae6d74a95f6",
               "port": "ca3f5b20-3682-4db5-b8e0-d0f793cf1fd4"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 20,
+                "y": 20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Web Request"
+            ],
+            "id": "c465c9e6-9db2-4e41-8270-e8cc600fe06a",
+            "source": {
+              "cell": "aaf9b387-c8db-4809-9dd3-eae6d74a95f6",
+              "port": "dd9b9c94-9b35-4218-888e-36c4425e94be"
+            },
+            "target": {
+              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
+              "port": "fa2ea471-1fb5-47ae-ac20-93d190fb59c8"
+            }
           }
         ]
       },
