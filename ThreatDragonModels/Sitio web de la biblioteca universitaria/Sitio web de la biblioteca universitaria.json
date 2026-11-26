@@ -1355,7 +1355,7 @@
       },
       {
         "id": 1,
-        "title": "Nuevo diagrama STRIInicio de sesión del usuario para el sitio web de la biblioteca universitariaDE",
+        "title": "Inicio de sesión del usuario para el sitio web de la biblioteca universitaria",
         "diagramType": "STRIDE",
         "placeholder": "Descripción de nuevo diagrama STRIDE",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
