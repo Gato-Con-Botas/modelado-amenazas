@@ -127,7 +127,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Sitio web\nbiblioteca",
-              "description": "El sitio web de la biblioteca\nuniversitaria se ejecutará en un\nservidor Linux con Apache. Este\nservidor será reforzado según el\nestándar de protección de servidores\nde la universidad.",
+              "description": "El sitio web de la biblioteca universitaria se ejecutará en un servidor Linux con Apache. Este servidor será reforzado según el estándar de protección de servidores de la universidad.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -269,7 +269,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
-              "description": "(1) Usuario web anónimo.\n(2) Usuario con credenciales de\ninicio de sesión válidas.\n(3) Usuario con credenciales de\ninicio de sesión no válidas.",
+              "description": "(1) Usuario web anónimo.\n(2) Usuario con credenciales de inicio de sesión válidas.\n(3) Usuario con credenciales de inicio de sesión no válidas.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -429,6 +429,13 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -542,7 +549,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Páginas web\nen disco",
-              "description": "Páginas físicas almacenadas en el\ndisco.",
+              "description": "Páginas físicas almacenadas en el disco.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -688,7 +695,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Web Application Config",
-              "description": "Archivo de configuración de la\naplicación.",
+              "description": "Archivo de configuración de la aplicación.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -719,13 +726,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -841,7 +841,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
-              "description": "El servidor de la base de datos será\nMySQL y se ejecutará en un\nservidor Linux. Este servidor será\nreforzado según el estándar de\nprotección de servidores de la\nuniversidad. Esto incluirá la\ninstalación de los últimos parches de\nseguridad del sistema operativo y de\nlas aplicaciones.",
+              "description": "El servidor de la base de datos será MySQL y se ejecutará en un servidor Linux. Este servidor será reforzado según el estándar de protección de servidores de la universidad. Esto incluirá la instalación de los últimos parches de seguridad del sistema operativo y de las aplicaciones.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -908,77 +908,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Response",
-              "description": "Respuestas enviadas por la\naplicación hacia los usuarios.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "30e0e2cc-fa98-46d2-a573-5dd14446b7ce",
-                  "title": "El flujo de datos debe utilizar HTTP/S",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure / Brecha de información",
-                  "description": "Estas respuestas se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
-                  "mitigation": "Las respuestas deberian requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "72a859dc-fb24-49da-8c6a-67bf92d607f3"
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 2,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Web Response"
-            ],
-            "id": "0fd04628-f0de-47a3-a836-8c6b48896332",
-            "source": {
-              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
-              "port": "6ffb747e-31cf-4f0d-a9dd-022bb3254c4d"
-            },
-            "target": {
-              "cell": "aaf9b387-c8db-4809-9dd3-eae6d74a95f6",
-              "port": "ca3f5b20-3682-4db5-b8e0-d0f793cf1fd4"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Web Request",
-              "description": "Respuestas recibidas por la\naplicación hacia los usuarios.",
+              "description": "Respuestas recibidas por la aplicación hacia los usuarios.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1035,6 +966,75 @@
             "target": {
               "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
               "port": "fa2ea471-1fb5-47ae-ac20-93d190fb59c8"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "Respuestas enviadas por la aplicación hacia los usuarios.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "30e0e2cc-fa98-46d2-a573-5dd14446b7ce",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Estas respuestas se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberian requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "72a859dc-fb24-49da-8c6a-67bf92d607f3"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Response"
+            ],
+            "id": "0fd04628-f0de-47a3-a836-8c6b48896332",
+            "source": {
+              "cell": "174f652a-0d3a-435e-b2a0-2017fff9b16e",
+              "port": "6ffb747e-31cf-4f0d-a9dd-022bb3254c4d"
+            },
+            "target": {
+              "cell": "aaf9b387-c8db-4809-9dd3-eae6d74a95f6",
+              "port": "ca3f5b20-3682-4db5-b8e0-d0f793cf1fd4"
             },
             "vertices": []
           },
@@ -1107,7 +1107,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Response",
-              "description": "Respuestas enviadas por la\naplicación hacia los bibliotecarios.",
+              "description": "Respuestas enviadas por la aplicación hacia los bibliotecarios.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1167,8 +1167,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "0fd04628-f0de-47a3-a836-8c6b48896332",
                 "c465c9e6-9db2-4e41-8270-e8cc600fe06a",
+                "0fd04628-f0de-47a3-a836-8c6b48896332",
                 "60c767d0-73e3-4de3-8c4c-5c0e8a2158f1",
                 "8a96c403-6dc1-490d-bf84-b4e98bada533"
               ],
@@ -1225,7 +1225,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Queries",
-              "description": "Instrucciones de SQL enviadas\nhacia la base de datos.",
+              "description": "Instrucciones de SQL enviadas hacia la base de datos.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1296,7 +1296,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Resultados\nWeb App Query",
-              "description": "Datos recuperados desde la base de\ndatos.",
+              "description": "Datos recuperados desde la base de datos.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1402,7 +1402,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Request",
-              "description": "Respuestas recibidas por la\naplicación hacia los bibliotecarios.",
+              "description": "Respuestas recibidas por la aplicación hacia los bibliotecarios.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1470,7 +1470,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Lee web\napp config",
-              "description": "Archivo físico de configuración\nleído desde el disco.",
+              "description": "Archivo físico de configuración leído desde el disco.",
               "outOfScope": true,
               "isTrustBoundary": false,
               "reasonOutOfScope": "Fuera del\nalcance",
