@@ -1025,6 +1025,34 @@
                 "y": -50
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Páginas",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Páginas"
+            ],
+            "id": "1b1e5dd3-d9e7-4eb7-8b42-fa375dc73189",
+            "source": {
+              "x": 140,
+              "y": 150
+            },
+            "target": {
+              "cell": "b995030d-e091-411b-b5f8-7e9ebd600155",
+              "port": "2f255a79-7b06-4c85-82bb-3e0387a2f68b"
+            }
           }
         ]
       },
